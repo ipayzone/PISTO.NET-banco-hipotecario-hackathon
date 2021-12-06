@@ -1,0 +1,91 @@
+Pisto.Net
+
+Empowering Merchants and remittances without the need of reliable Internet. 
+
+* Introduction:
+
+Bitcoins per nature requires access to internet as it needs to register the 
+transactions in the blockchain.
+
+7 out of 10 people in Rural areas in El Salvador do not have Internet,
+as the service is not reliable or they are not subscribed to a
+data plan.
+
+Store owners can have Wifi and afford a data plan but are unlikely to share it
+with the customers.
+
+PISTO.NET is designed to enable people in rural areas to take advantage of bitcoin payments
+even if they don't have reliable internet, improving the business of local merchants and 
+presenting a new option for sending remittances from USA.
+
+The proposed solution involves a hibrid payment system using virtual prepaid accounts hosted
+in the Open Bank Project, The accounts are similar to Gift Cards. The merchants issues the 
+prepaid accounts at the point of sale and gives them to customers as part of promotions,
+special offers, or just selling them. The accounts can be printed in thermal paper, 
+preprinted as business cards, or sent via SMS. The customers save the accounts in the phone and 
+share them with family and friends. They can load them with Bitcoins, and use them to pay only
+at the store that issued the accounts. The Accounts are denominated in USD to avoid 
+price volatility, but technically can be in bitcoins.
+
+The system includes two Android App, one is the merchant app (PISTO.POS) that issues and redeem the prepaid
+accounts, and  the second is the Customer App (Pisto.APP). The system also includes a back end
+app that runds BTCPAY for accepting bitcoins and updating the account balances.
+ 
+
+
+USE CASES:
+
+* Issuing prepaid accounts
+The system is hosted in Open Bank System, a new bank named PISTO.NET is created 
+and holds the funds of the accounts. When a merchant issues a prepaid account, it makes a load and
+transfer funds from the merchant account to the prepaid account, receiving the payment from the 
+customer if they buy the prepaid card, or when their relatives reload the card using Bitcoins.
+
+* Sharing prepaid accounts
+The system is designed to enable sharing the prepaid account with family and friends, for example
+the parents working in the city can share a copy of the preaid account to their kids or care takers,
+and they can use as payment at the merchant locations. The parent can reload the account remotely
+even if the kids have no internet.
+
+* Remittances
+The system is designed to enable sharing the prepaid account with relative in USA. Relatives can load
+funds using Bitcoins, and the funds are credited in the customer's prepaid accout and deposited in the merchant's
+ account. The merchant in El Salvador has the option
+to convert to USD using the existing channels. 
+
+* Redeeming prepaid accounts
+Customers use the prepaid account at payment by presenting the card in a QR-code format,
+since the card is stored in the phone in graphic format, it does not need to have internet available,
+and since it can only be used at the merchant location and for a limited amount, the risk of fraud is low.
+Merchant enter the amount to pay in their phone and scans the QR-code, it connects to the server
+and ask to redeem the payment. The communication between the Merchant and the Open Bank Project system
+can be done via internet or via encrypted text message and a gateway.
+The funds are moved from the card account to the merchant account, and the sistem issues a receipt.
+Optionally the system can send a text message to the customer and merchant as confirmation of the payment.
+
+* Checking Balance
+Customers can check the balance from the mobile app or asking the merchant to scan the QR-code and
+sending a balance check command.
+
+* Reloading the Prepaid Account.
+Customers can reload their account using cash bitcoin or bank cards at the merchant location 
+or using Bitcoin from the customer mobile app.
+
+* Reloading with Bitcoins.
+Customers use the mobile app to select the prepaid account they want to load and the amount. The system will
+open an Bitcoin Invoice and process the payment (Implemented using BTCPAY) and the funds are deposited in the
+merchant account. The system receives a notification to transfer funds from the merchant's reference account 
+to the customer prepaid account.
+
+* Trasaction Reports.
+The POS terminal generates reports offline (at the terminal) or can request to obtain reports from the
+server
+
+* Featured Businesses 
+The Customer App (Pisto.App) has a list of featured merchant locations such as groceries stores, fast food, gas
+station, farmacies and other coorporate locations. 
+
+* Local Businesses
+The Customer App (Pisto.App) has an option to scan and save the prepaid account of local businesses, 
+and enables to check balance, reload, share.
+
